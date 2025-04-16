@@ -2,7 +2,7 @@ public class Movie extends LibraryMedia{
     private String director;
     private int duration;
 
-    public Movie(String director, int duration, String title, int publicationYear){
+    public Movie(String title, String director, int publicationYear, int duration){
         super(title, publicationYear);
         this.director = director;
         this.duration = duration;

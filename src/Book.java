@@ -2,7 +2,7 @@ public class Book extends LibraryMedia{
     private String author;
     private int numberOfPages;
 
-    public Book (String title, String author, int numberOfPages, int publicationYear ){
+    public Book (String title, int numberOfPages, int publicationYear ){
         super(title, publicationYear);
         this.author = author;
         this.numberOfPages = numberOfPages;
@@ -11,9 +11,9 @@ public class Book extends LibraryMedia{
 
     @Override
 
-    public void super.displayInformation(){
+    public void super.displayInformation(String theWitcher, int i, int numberOfPages){
         System.out.println("Author: " + author);
-        System.out.println("Number of pages: " + numberOfPages);
+        System.out.println("Number of pages: " + this.numberOfPages);
 
     }
 
